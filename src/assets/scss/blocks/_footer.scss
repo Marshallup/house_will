@@ -1,0 +1,30 @@
+.footer {
+  background-color: black;
+  position: relative;
+  &-underline__wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &-underline {
+    height: 202px;
+    &__wrap {
+      padding-top: 21px;
+    }
+  }
+  .line {
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($color: #fafafa, $alpha: 0.2);
+  }
+}
+@media screen and (max-width: 846px) {
+  .footer__btn {
+    margin-top: 20px;
+  }
+}

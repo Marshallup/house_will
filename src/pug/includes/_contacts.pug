@@ -1,0 +1,23 @@
+section.contacts#contacts
+  .container.contacts__container
+    .contacts__inner
+      .data
+        .data__inner
+          h2.title-hw.title__contacts Обитаем тут
+          .descr-small.descr-small__contacts Будем рады видеть у себя в офисе
+          p.data-info.data-info__address
+            | Екатеринбург, <br>
+            | ул. Мамина-Сиьиряка, 36
+          .descr-small.descr-small__contacts Поболтаем по телефону (с 8 утра до 22 00)
+          a(href="tel:88000000000").data-info.data-info__phone 8 800 000-00-00
+          .descr-small.descr-small__contacts Ждем писем (можно и любовные)
+          a(href="mail:pochta@ml.com").data-info.data-info__mail pochta@ml.com
+        .data__inner
+          a(href="").data__link
+            svg(class="icon icon__fb")
+                use(xlink:href="assets/img/icons/sprite.svg#facebook")
+          a(href="").data__link
+            svg(class="icon icon__tw")
+                use(xlink:href="assets/img/icons/sprite.svg#twitter")
+      .map
+        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae9cffbf9ad25e8e77ae4101fad56414b1ee87c3f839b6e7ebf34778ed795dc14&amp;source=constructor" frameborder="0")

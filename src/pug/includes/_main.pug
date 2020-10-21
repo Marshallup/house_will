@@ -1,0 +1,69 @@
+section.main
+  .swiper-container.main-swiper
+    .swiper-wrapper
+      .swiper-slide
+        img(src="assets/img/main_slider/main-slider1.jpg" alt="grey")
+      .swiper-slide
+        img(src="assets/img/main_slider/bg-main.jpg" alt="grey")
+      .swiper-slide
+        img(src="assets/img/main_slider/grey.jpg" alt="grey")
+  nav.menu
+    .menu__cross
+    li.menu__item
+      a.menu__link(href="#presentation") Что мы умеем
+    li.menu__item
+      a.menu__link(href="#works") Примеры работ
+    li.menu__item
+      a.menu__link(href="#about") Пара слов о нас
+    li.menu__item
+      a.menu__link(href="#calculator") Расчет стоимости
+    li.menu__item
+      a.menu__link(href="#opinions") Мнения клиентов
+    li.menu__item
+      a.menu__link(href="#contacts") Контакты
+  .container.container__main
+    header.header
+      .header__left-side
+        .logo
+          img(src="assets/img/icons/logo.svg", alt="logo")
+        .header__descr
+          | Проектирование дизайна интереров <br>
+          | и экстерьеров в Санкт-Петербурге и ЛО 
+      .header__right-side
+        .socials
+          a(href="").socials__link
+            svg(class="icon icon__whsp")
+                use(xlink:href="assets/img/icons/sprite.svg#whatsapp")
+          a(href="").socials__link
+            svg(class="icon icon__tg")
+              use(xlink:href="assets/img/icons/sprite.svg#telegram")
+          a(href="").socials__link
+            svg(class="icon icon__phone")
+              use(xlink:href="assets/img/icons/sprite.svg#phone")
+        .block-call
+          a(href="").phone.phone__header +8 (812) 607-64-77
+          a(href="").link-consult Консультация Дизайнера
+        .burger-wrap
+          .burger
+            span
+    .main__content-wrap
+      h1.title-main
+        | <span class="title-main__top">House WIll – воплощение</span> <br>
+        | <span class="title-main__bottom">Любых Ваших желаний</span>
+      p.descr-main
+        | <span class="descr-main__top">Реализация проектов высочайшего уровня по дизайну интерьеров квартир</span> <br>
+        | <span class="descr-main__bottom">Загородных домов и Пентхаусов для самых притязательных клиентов</span>
+      .block-action
+        button.btn.btn__fill
+          .btn__inner
+            <span class='btn__text'>Сколько это стоит?</span>
+          .btn__arrow
+        a(href="").block-action__link Ещё работы
+    a#leafDown(href="#presentation")
+      .leaf-down 
+        | Листать вниз
+        .leaf-down__arrows
+          img(src="assets/img/icons/leaf-down.svg", alt="листать вниз")
+          img(src="assets/img/icons/leaf-down.svg", alt="листать вниз")
+    .main-swiper-pagination
+

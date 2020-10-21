@@ -1,0 +1,125 @@
+doctype html
+html(lang="ru-RU").lock
+  include ../includes/_head.pug
+  body
+    .page-loader-main.loading
+      .loader-section
+      .loader-section
+      .loader-section
+      .loader-section
+      .loader-section
+      .loader-section
+    .page-lines
+      .page-line
+      .page-line
+      .page-line
+      .page-line
+      .page-line
+    section.works-page
+      nav.menu
+        .menu__cross
+        li.menu__item
+          a.menu__link(href="#presentation") Что мы умеем
+        li.menu__item
+          a.menu__link(href="#works") Примеры работ
+        li.menu__item
+          a.menu__link(href="#about") Пара слов о нас
+        li.menu__item
+          a.menu__link(href="#calculator") Расчет стоимости
+        li.menu__item
+          a.menu__link(href="#opinions") Мнения клиентов
+        li.menu__item
+          a.menu__link(href="#contacts") Контакты
+      .container        
+        header.header
+          .header__left-side
+            .logo
+              img(src="assets/img/icons/logo.svg", alt="logo")
+            .header__descr
+              | Проектирование дизайна интереров <br>
+              | и экстерьеров в Санкт-Петербурге и ЛО 
+          .header__right-side
+            .socials
+              a(href="").socials__link
+                svg(class="icon icon__whsp")
+                    use(xlink:href="assets/img/icons/sprite.svg#whatsapp")
+              a(href="").socials__link
+                svg(class="icon icon__tg")
+                  use(xlink:href="assets/img/icons/sprite.svg#telegram")
+              a(href="").socials__link
+                svg(class="icon icon__phone")
+                  use(xlink:href="assets/img/icons/sprite.svg#phone")
+            .block-call
+              a(href="").phone.phone__header +8 (812) 607-64-77
+              a(href="").link-consult Консультация Дизайнера
+            .burger-wrap
+              .burger
+                span
+        .page-content  
+          h2.title-hw.title__works Все работы
+          .tabs.works-page-tabs
+            .tabs-triggers
+              a.tabs-triggers__item(href="#all").tabs-triggers__item--active Все
+              a.tabs-triggers__item(href="#private") Частные
+              a.tabs-triggers__item(href="#commerce") Коммерция
+            .tabs-content
+              .tabs-content__item.tabs-content__item--active
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work1.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work2.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work3.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work4.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work5.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work6.jpg", alt="work")
+              .tabs-content__item
+                //- .tabs-content__img-wrap
+                  img(src="assets/img/works/work1.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work2.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work3.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work4.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work5.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work6.jpg", alt="work")
+              .tabs-content__item
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work1.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work2.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work3.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work4.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work5.jpg", alt="work")
+                .tabs-content__img-wrap
+                  img(src="assets/img/works/work6.jpg", alt="work")
+            .pagination
+              a(href="")
+                .pagination__arrow-prev
+                  img(src="assets/img/icons/arrow-prev.svg", alt="назад")
+              ul.pagination-list
+                a(href="")
+                  li.pagination-list__item 1
+                a(href="")
+                  li.pagination-list__item 2
+                a(href="")
+                  li.pagination-list__item.pagination-list__item--active 3
+                a(href="")
+                  li.pagination-list__item 4
+                a(href="")
+                  li.pagination-list__item 5
+              .pagination__arrow-next
+                a(href="")
+                  img(src="assets/img/icons/arrow-next.svg", alt="вперед")
+      include ../includes/_footer.pug
+  script(src="assets/js/vendors~app.js")
+  script(src="assets/js/app.js")

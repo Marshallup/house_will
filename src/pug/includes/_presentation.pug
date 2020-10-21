@@ -1,0 +1,102 @@
+section.presentation#presentation
+  .container.presentation__container
+    .presentation-bg
+      img(src="assets/img/bg-presentation.jpg" alt="s")
+    .parallelogram
+    .swiper-container.presentation-swiper
+      h2.presentation-slide__title.title-hw
+        | Что <br>
+        | мы <br>
+        | умеем
+      .slider-control.slider-control-presentation
+        .slider-control__pagination.slider-control-presentation__pagination
+        .slider-control__prev.slider-control-presentation__prev
+        .slider-control__next.slider-control-presentation__next
+      .swiper-wrapper
+        .swiper-slide
+          .presentation-slide
+            .presentation-slide-photo
+              .presentation-slide-photo__img
+                img(src="assets/img/presentation/presentation1.jpg", alt="presentation1")
+              button.presentation-slide-photo-watch
+                .presentation-slide-photo-watch__img
+                  svg(class="icon__tablet")
+                    use(xlink:href="assets/img/icons/sprite.svg#tablet")
+                .presentation-slide-photo-watch__text
+                  | Смотреть <br>
+                  | презентацию
+            .presentation-slide-descr
+              p.presentation-slide__subtitle
+                | Дизайн интерьеров, <br>
+                | проектирование <br>
+                | и строительство
+              .presentation-slide-descr__text
+                p.presentation-slide-descr__text-paragraph
+                  | Студия дизайна “House WIill” проектирует интерьеры класса <br>
+                  | люкс. Знакомясь с клиентом, мы стараемся понять и <br>
+                  | предугадать его желания — результат всегда превосходит самые <br>
+                  | смелые ожидания.
+                p.presentation-slide-descr__text-paragraph
+                  | Миссия студии — помочь клиенту создать интерьер, который <br>
+                  | станет продолжением его уникальной личности и будет <br>
+                  | учитывать его увлечения, образ жизни и требования к <br>
+                  | комфорту.
+                p.presentation-slide-descr__text-paragraph
+                  | Дизайн-бюро “House WIill” ведет проекты от идеи до стадии <br>
+                  | декорирования. Наше название — отсылка к культовому клубу <br>
+                  | “House WIill”, собиравшая в 70-е сливки общества. Это было <br>
+                  | место для избранных, желающих превратить свои мечты в <br>
+                  | реальность. К нам приходят за эксклюзивным дизайном <br>
+                  | интерьеров и сервисом премиум-класса. Мы берем <br>
+                  | исполнение ваших желаний на себя. <br>
+              button.btn.presentation-slide-descr__btn.btn__clear Поподробнее пожалуйста
+        .swiper-slide
+          .presentation-slide
+            .presentation-slide-photo
+              .presentation-slide-photo__img
+                img(src="assets/img/presentation/presentation1.jpg", alt="presentation1")
+              button.presentation-slide-photo-watch
+                .presentation-slide-photo-watch__img
+                  svg(class="icon__tablet")
+                    use(xlink:href="assets/img/icons/sprite.svg#tablet")
+                .presentation-slide-photo-watch__text
+                  | Смотреть <br>
+                  | презентацию
+            .presentation-slide-descr
+              p.presentation-slide__subtitle
+                | Дизайн интерьеров ss, <br>
+                | проектирование <br>
+                | и строительство
+              .presentation-slide-descr__text
+                p.presentation-slide-descr__text-paragraph
+                  | Студия дизайна “House WIill” проектирует интерьеры класса <br>
+                  | люкс. Знакомясь с клиентом, мы стараемся понять и <br>
+                  | предугадать его желания — результат всегда превосходит самые <br>
+                  | смелые ожидания.
+                p.presentation-slide-descr__text-paragraph
+                  | Миссия студии — помочь клиенту создать интерьер, который <br>
+                  | станет продолжением его уникальной личности и будет <br>
+                  | учитывать его увлечения, образ жизни и требования к <br>
+                  | комфорту.
+                p.presentation-slide-descr__text-paragraph
+                  | Дизайн-бюро “House WIill” ведет проекты от идеи до стадии <br>
+                  | декорирования. Наше название — отсылка к культовому клубу <br>
+                  | “House WIill”, собиравшая в 70-е сливки общества. Это было <br>
+                  | место для избранных, желающих превратить свои мечты в <br>
+                  | реальность. К нам приходят за эксклюзивным дизайном <br>
+                  | интерьеров и сервисом премиум-класса. Мы берем <br>
+                  | исполнение ваших желаний на себя. <br>
+              button.btn.presentation-slide-descr__btn.btn__clear Поподробнее пожалуйста
+    .presentation-form
+      .presentation-form__text
+        .presentation-form__reminder Просто напоминаем, что
+        .presentation-form__title
+          | Консультация <br>
+          | у нас бесплатная
+        .descr-small.presentation-form__descr Просто оставьте номер, мы сами перезвоним
+      form.form-number
+        input(placeholder="Введите свой номер").form-number__input
+        button.btn.btn.form-number__submit.btn__fill
+          .btn__inner
+            <span class='btn__text'>Перезвоните</span>
+          .btn__arrow

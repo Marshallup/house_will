@@ -1,0 +1,40 @@
+.works-page {
+  position: relative;
+  z-index: 1;
+}
+.page-content {
+  padding: 100px 0;
+}
+.pagination,
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  margin-top: 60px;
+  &-list {
+    margin: 0 15px !important;
+    &__item {
+      margin: 0 2px;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      font-family: "Noto Serif", serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #dddddd;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        color: black;
+        background-color: #d6aa63;
+      }
+      &--active {
+        color: black;
+        background-color: #d6aa63;
+      }
+    }
+  }
+}

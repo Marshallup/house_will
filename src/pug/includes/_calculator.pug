@@ -1,0 +1,53 @@
+section.calculator-section#calculator
+  .container
+    .calculator
+      .calculator__inner
+        h2.title-hw.title__calculator 
+          | Автоматический расчет <br>
+          | примерной стоимости
+        form.calculator-content
+          .calculator-form
+            .calculator-form__wrap
+              label.calculator-form__title(for="placementArea")
+                | Площадь помещения 
+              input(disabled type="hidden")#placementArea
+              .calculator-form__placement-area
+                span.calculator-form__placement-area__value 10 
+                | м<sup>2</sup>
+            .calculator-form__wrap
+              .range
+                .range-wrap
+                  input.range__input(type="range" min="50" max="350")
+                .range-numbers
+                  .range-numbers__min
+                    span 50
+                    | м<sup>2</sup>
+                  .range-numbers__max
+                    span 350
+                    | м<sup>2</sup>
+            .calculator-form__wrap
+              label.calculator-form__title(for="placement") Тип помещения 
+              select.justselect.calculator-form__select(name="type" id="placement" onchange="alert(this.value)")
+                option(value="25") Коттедж
+                option(value="10") Дом
+                option(value="50") Дача
+          .calculator-result
+            .calculator-result__inner
+              .calculator-result__about
+                span.calculator-result__title Примерно
+                .calculator-result__cost
+                  span#resultCost 103 000 
+                  | руб.
+              .calculator-result__or
+                span.calculator-result__title Или
+                .calculator-result__cost
+                  span#costForMeter 12 
+                  | руб./м<sup>2</sup>
+            button.btn.btn__result.btn__fill
+              .btn__inner
+                <span class='btn__text'>Ок, у меня есть вопрос</span>
+              .btn__arrow
+
+
+
+        

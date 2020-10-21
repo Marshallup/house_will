@@ -1,0 +1,228 @@
+.opinions {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  &-bg {
+    width: 80%;
+    height: 627px;
+    position: absolute;
+    right: -101px;
+    bottom: 0;
+    top: 150px;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      font-family: "object-fit: cover;";
+    }
+  }
+  &__container {
+    padding: 70px 0 120px 0;
+  }
+  &-swiper {
+    margin-top: 34px;
+    position: relative;
+  }
+  .slider-control-opinions {
+    top: 73px;
+    right: 223px;
+  }
+  &-slide {
+    padding-top: 44px;
+    display: flex;
+    &-photo,
+    &-text-block {
+      position: relative;
+    }
+    &-photo {
+      z-index: 1;
+      left: 80px;
+      bottom: 43px;
+    }
+    &-text-block {
+      z-index: 0;
+      margin-left: 5px;
+      padding: 39px 0 30px 102px;
+      flex-basis: 768px;
+      border: 4px solid #dda955;
+      border-width: 0 4px 4px 0;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 87%;
+        height: 4px;
+        border: 4px solid #dda955;
+        border-width: 4px 0 0 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        height: 8%;
+        border: 2px solid #dda955;
+      }
+      &__name {
+        font-size: 21px;
+        font-weight: 700;
+        font-family: "Noto Serif", serif;
+        letter-spacing: 0.02em;
+        color: #fafafa;
+        opacity: 0.8;
+      }
+      &__subtitle,
+      &__descr {
+        font-family: "Roboto", sans-serif;
+      }
+      &__subtitle {
+        font-weight: 500;
+        color: #dda955;
+      }
+      &__descr {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 197.9%;
+        letter-spacing: 0.02em;
+        color: #7a7a7a;
+      }
+      @media screen and (max-width: 971px) {
+        &::after {
+          height: 25%;
+        }
+      }
+      @media screen and (max-width: 918px) {
+        &::before {
+          width: 85%;
+        }
+        &::after {
+          height: 43%;
+        }
+      }
+      @media screen and (max-width: 810px) {
+        &::before {
+          width: 85%;
+        }
+        &::after {
+          height: 53%;
+        }
+      }
+      @media screen and (max-width: 774px) {
+        &::before {
+          width: 80%;
+        }
+        &::after {
+          height: 81%;
+        }
+      }
+      @media screen and (max-width: 603px) {
+        &::before {
+          width: 74%;
+        }
+      }
+      @media screen and (max-width: 462px) {
+        &::before {
+          width: 67%;
+        }
+        &::after {
+          height: 85%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1171px) {
+  .opinions__container {
+    padding-bottom: 75px;
+  }
+  .opinions {
+    .slider-control-opinions {
+      right: 50px;
+    }
+  }
+}
+@media screen and (max-width: 774px) {
+  .opinions {
+    &-slide {
+      padding-top: 65px;
+      &-text-block__header {
+        padding-left: 150px;
+      }
+      &-text-block__subtitle {
+        margin-top: 23px;
+      }
+      &-photo {
+        top: 0;
+        left: 0;
+        width: 112.95px;
+        height: 141.81px;
+        position: absolute;
+      }
+      &-text-block {
+        margin: 30px 0 0 10px;
+        padding: 30px 20px 20px 20px;
+      }
+    }
+    .slider-control-opinions {
+      top: 0;
+    }
+  }
+}
+@media screen and (max-width: 512px) {
+  .opinions {
+    .title-hw__opinions {
+      margin-top: 60px;
+      font-size: 26px;
+    }
+    &-slide {
+      &-text-block__name {
+        padding-left: 100px;
+      }
+      &-text-block__name {
+        font-size: 17px;
+      }
+      &-text-block__header {
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 396px) {
+  .opinions {
+    &-slide {
+      &-text-block__name {
+        padding-left: 162px;
+      }
+    }
+  }
+  .opinions-slide-text-block__name {
+    min-height: 50px;
+    margin-bottom: 23px;
+  }
+  .opinions-slide-text-block__subtitle {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 379px) {
+  .opinions-slide-photo {
+    top: 31px;
+    left: 4px;
+  }
+  .opinions-slide-text-block::before {
+    width: 57%;
+  }
+}
+@media screen and (max-width: 362px) {
+  .opinions {
+    &-slide {
+      &-text-block__name {
+        padding-left: 122px;
+      }
+    }
+  }
+}
